@@ -6,7 +6,7 @@ public class Ejercicio7
     {
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("\nIngrese la palabra en mayusculas, luego presione la tecla Enter: ");
+        System.out.println("\nIngrese la palabra en minuscula, luego presione la tecla Enter: ");
         String palabra = scan.nextLine();
 
         scan.close();
@@ -22,7 +22,7 @@ public class Ejercicio7
         for(int i = 0; i < palabra.length(); i++)
         {
             int letra = (int)palabra.charAt(i);
-            char let = ((char)(letra + 32));
+            char let = ((char)(letra - 32));
             System.out.println(let);
         }
         return mayuscula.toString();
