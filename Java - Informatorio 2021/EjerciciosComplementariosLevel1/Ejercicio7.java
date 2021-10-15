@@ -23,7 +23,7 @@ public class Ejercicio7
         {
             int letra = (int)palabra.charAt(i);
             char let = ((char)(letra - 32));
-            System.out.println(let);
+            System.out.print(let);
         }
         return mayuscula.toString();
     }
